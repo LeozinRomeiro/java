@@ -1,4 +1,4 @@
-package LinkedList;
+package main.LinkedList;
 
 public class LinkedList {
     private int length;
@@ -30,6 +30,26 @@ public class LinkedList {
 
 
         length++;
+        return true;
+    }
+
+    public boolean remove(int index, String data){
+        
+        if (index<0||index>length) {
+            return false;
+        }
+        
+        if(length==index+1){
+            removeLast();
+        }else if(length == 0){
+            removeFirst();
+        }else{
+            Node temp = get(index);
+            get(index - 1).next = temp.next;
+            temp = null;
+            length--;
+        }
+        
         return true;
     }
 

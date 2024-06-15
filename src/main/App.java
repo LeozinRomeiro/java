@@ -2,8 +2,8 @@ package main;
 
 import java.util.Scanner;
 
-import implementation.Supermarket;
-import implementation.SupermarketArray;
+import main.implementation.Supermarket;
+import main.implementation.SupermarketArray;
 
 public class App {
     private final static int SIZE = 3;
