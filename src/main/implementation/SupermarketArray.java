@@ -1,5 +1,4 @@
-package implementation;
-
+package main.implementation;
 public class SupermarketArray implements Supermarket {
 
     private final String [] items;

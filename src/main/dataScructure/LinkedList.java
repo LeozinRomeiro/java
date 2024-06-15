@@ -1,4 +1,4 @@
-package main.LinkedList;
+package main.dataScructure;
 
 public class LinkedList {
     private int length;
@@ -181,6 +181,14 @@ public class LinkedList {
         list.insert(1, "Elemento 3");
         list.set(1, "null");
         list.print();
+    }
+
+    public class Node {
+        String data;
+        Node next;
+        public Node(String data) {
+            this.data = data;
+        }
     }
 
 }

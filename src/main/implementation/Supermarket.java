@@ -1,4 +1,4 @@
-package implementation;
+package main.implementation;
 
 public interface Supermarket {
     void add(final String item);
