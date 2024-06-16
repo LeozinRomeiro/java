@@ -37,7 +37,7 @@ public class Queue {
         }
     }
 
-    public void queue(int value){
+    public void enqueue(int value){
         Node newNode = new Node(value);
         if (this.height==0) {
             first = newNode;
@@ -91,7 +91,7 @@ public class Queue {
         line.getFirst();
         line.getLast();
         line.print();
-        line.queue(6);
+        line.enqueue(6);
         line.getHeight();
         line.getFirst();
         line.getLast();

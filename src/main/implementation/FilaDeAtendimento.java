@@ -14,7 +14,7 @@ public class FilaDeAtendimento {
         for (int i = 1; i < n; i++) {
             cliente = random.nextInt(999);
             System.out.println("Chegou cliente: "+cliente);
-            queue.queue(cliente);
+            queue.enqueue(cliente);
         }
         var node = queue.dequeue();
         while (node != null) {
